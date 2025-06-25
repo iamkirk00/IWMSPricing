@@ -60,3 +60,60 @@ input[type="range"] {
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid
+
+/* Add these styles to your existing style.css file */
+
+.vertical-sliders {
+    display: flex;
+    justify-content: space-around; /* Distribute sliders evenly */
+    align-items: center; /* Align items vertically */
+    height: 200px; /* Adjust the height as needed */
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-slider {
+    /* Reset default styles */
+    -webkit-appearance: none;
+    width: 8px; /* Adjust the width of the slider */
+    height: 150px; /* Adjust the height of the slider */
+    background: #ddd;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 5px; /* Space between slider and label */
+}
+
+/* Rotate the slider */
+.vertical-slider {
+    transform: rotate(-90deg);
+}
+
+/* Webkit (Chrome, Safari) */
+.vertical-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #0056b3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Firefox */
+.vertical-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #0056b3;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* Ensure consistent label styling */
+.slider-container label {
+    font-size: 0.8em;
+    text-align: center;
+}
