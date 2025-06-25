@@ -85,6 +85,7 @@ input[type="range"] {
     outline: none;
     border-radius: 4px;
     margin-bottom: 5px; /* Space between slider and label */
+    transform: rotate(-90deg); /* MOST IMPORTANT */
 }
 
 /* Rotate the slider */
