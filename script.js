@@ -1,4 +1,5 @@
 function calculateTotal() {
+    console.log("calculateTotal() called"); // Add this line
     let implementationCost = 0;
 
     // Implementation Costs
@@ -27,6 +28,7 @@ function calculateTotal() {
     implementationCost += parseInt(document.getElementById("vendorEngagementMaintenance").value);
     implementationCost += parseInt(document.getElementById("workOrderCompletion").value);
     implementationCost += parseInt(document.getElementById("projectManagementMaintenance").value);
+    console.log("implementationCost", implementationCost); // Add this line
 
     // Slider Values
     let projectManagementMultiplier = parseFloat(document.getElementById("projectManagementSlider").value);
@@ -37,12 +39,15 @@ function calculateTotal() {
 
     // Total Multiplier
     let totalMultiplier = 1 + (projectManagementMultiplier - 1) + (changeManagementMultiplier - 1) + (cadServicesMultiplier - 1) + (dataCleanupMultiplier - 1) + (integrationEffortsMultiplier - 1);
+    console.log("totalMultiplier", totalMultiplier); // Add this line
 
     // Software Cost
     let softwareCost = parseInt(document.getElementById("software").value);
+    console.log("softwareCost", softwareCost); // Add this line
 
     // Calculate Total Cost
     let totalCost = implementationCost * totalMultiplier + softwareCost;
+    console.log("totalCost", totalCost); // Add this line
 
     // Update the Total Cost Display
     document.getElementById("totalCost").innerText = "$" + totalCost.toLocaleString();
