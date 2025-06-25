@@ -8,265 +8,278 @@
 </head>
 <body>
     <div class="container">
-        <section id="implementation">
+        <!-- Tab Navigation -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Implementation')">Implementation Includes</button>
+            <button class="tablinks" onclick="openTab(event, 'Services')">Services Engagement</button>
+            <button class="tablinks" onclick="openTab(event, 'Software')">Software Used</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="Implementation" class="tabcontent">
             <h2>Implementation Includes:</h2>
-            <div class="columns">
-                <div class="column">
-                    <h3>Lease</h3>
-                    <div>
-                        <label for="reLease">RE Lease:</label>
-                        <select id="reLease" name="reLease" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
+            <section id="implementation">
+                <div class="columns">
+                    <!-- (Your Implementation Includes content here) -->
+                    <!-- (Make sure all IDs are unique) -->
+                    <div class="column">
+                        <h3>Lease</h3>
+                        <div>
+                            <label for="reLease">RE Lease:</label>
+                            <select id="reLease" name="reLease" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="assetLease">Asset Lease:</label>
+                            <select id="assetLease" name="assetLease" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="internalLease">Internal Lease:</label>
+                            <select id="internalLease" name="internalLease" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="optionsClauses">Options & Clauses:</label>
+                            <select id="optionsClauses" name="optionsClauses" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="accountsPayable">Accounts Payable (AP):</label>
+                            <select id="accountsPayable" name="accountsPayable" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="accountsReceivable">Accounts Receivable (AR):</label>
+                            <select id="accountsReceivable" name="accountsReceivable" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <label for="assetLease">Asset Lease:</label>
-                        <select id="assetLease" name="assetLease" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
+                    <div class="column">
+                        <h3>Projects</h3>
+                        <div>
+                            <label for="projectSchedule">Project Schedule:</label>
+                            <select id="projectSchedule" name="projectSchedule" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="projectBudget">Project Budget:</label>
+                            <select id="projectBudget" name="projectBudget" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="projectDocumentation">Project Documentation:</label>
+                            <select id="projectDocumentation" name="projectDocumentation" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="vendorEngagementProject">Vendor Engagement:</label>
+                            <select id="vendorEngagementProject" name="vendorEngagementProject" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="projectBilling">Project Billing:</label>
+                            <select id="projectBilling" name="projectBilling" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <label for="internalLease">Internal Lease:</label>
-                        <select id="internalLease" name="internalLease" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
+                    <div class="column">
+                        <h3>Space</h3>
+                        <div>
+                            <label for="spaceAssignment">Space Assignment:</label>
+                            <select id="spaceAssignment" name="spaceAssignment" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="spaceChargeback">Space Chargeback:</label>
+                            <select id="spaceChargeback" name="spaceChargeback" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="moveManagement">Move Management:</label>
+                            <select id="moveManagement" name="moveManagement" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="moveProjects">Move Projects:</label>
+                            <select id="moveProjects" name="moveProjects" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="spacePlanning">Space Planning:</label>
+                            <select id="spacePlanning" name="spacePlanning" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <label for="optionsClauses">Options & Clauses:</label>
-                        <select id="optionsClauses" name="optionsClauses" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="accountsPayable">Accounts Payable (AP):</label>
-                        <select id="accountsPayable" name="accountsPayable" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="accountsReceivable">Accounts Receivable (AR):</label>
-                        <select id="accountsReceivable" name="accountsReceivable" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
+                    <div class="column">
+                        <h3>Maintenance</h3>
+                        <div>
+                            <label for="serviceRequests">Service Requests:</label>
+                            <select id="serviceRequests" name="serviceRequests" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="preventiveMaintenance">Preventive Maintenance:</label>
+                            <select id="preventiveMaintenance" name="preventiveMaintenance" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="inventoryManagement">Inventory Management:</label>
+                            <select id="inventoryManagement" name="inventoryManagement" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="vendorEngagementMaintenance">Vendor Engagement:</label>
+                            <select id="vendorEngagementMaintenance" name="vendorEngagementMaintenance" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="workOrderCompletion">Work Order Completion:</label>
+                            <select id="workOrderCompletion" name="workOrderCompletion" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="projectManagementMaintenance">Project Management:</label>
+                            <select id="projectManagementMaintenance" name="projectManagementMaintenance" onchange="calculateTotal()">
+                                <option value="0">Not Implemented</option>
+                                <option value="25000">Initialized</option>
+                                <option value="50000">Configured</option>
+                                <option value="100000">Heavily Configured</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </div>
 
-                <div class="column">
-                    <h3>Projects</h3>
-                    <div>
-                        <label for="projectSchedule">Project Schedule:</label>
-                        <select id="projectSchedule" name="projectSchedule" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="projectBudget">Project Budget:</label>
-                        <select id="projectBudget" name="projectBudget" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                                                    <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="projectDocumentation">Project Documentation:</label>
-                        <select id="projectDocumentation" name="projectDocumentation" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="vendorEngagementProject">Vendor Engagement:</label>
-                        <select id="vendorEngagementProject" name="vendorEngagementProject" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="projectBilling">Project Billing:</label>
-                        <select id="projectBilling" name="projectBilling" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <h3>Space</h3>
-                    <div>
-                        <label for="spaceAssignment">Space Assignment:</label>
-                        <select id="spaceAssignment" name="spaceAssignment" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="spaceChargeback">Space Chargeback:</label>
-                        <select id="spaceChargeback" name="spaceChargeback" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="moveManagement">Move Management:</label>
-                        <select id="moveManagement" name="moveManagement" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="moveProjects">Move Projects:</label>
-                        <select id="moveProjects" name="moveProjects" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="spacePlanning">Space Planning:</label>
-                        <select id="spacePlanning" name="spacePlanning" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <h3>Maintenance</h3>
-                    <div>
-                        <label for="serviceRequests">Service Requests:</label>
-                        <select id="serviceRequests" name="serviceRequests" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="preventiveMaintenance">Preventive Maintenance:</label>
-                        <select id="preventiveMaintenance" name="preventiveMaintenance" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="inventoryManagement">Inventory Management:</label>
-                        <select id="inventoryManagement" name="inventoryManagement" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="vendorEngagementMaintenance">Vendor Engagement:</label>
-                        <select id="vendorEngagementMaintenance" name="vendorEngagementMaintenance" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="workOrderCompletion">Work Order Completion:</label>
-                        <select id="workOrderCompletion" name="workOrderCompletion" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="projectManagementMaintenance">Project Management:</label>
-                        <select id="projectManagementMaintenance" name="projectManagementMaintenance" onchange="calculateTotal()">
-                            <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</option>
-                            <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                <section id="services">
+        <div id="Services" class="tabcontent">
             <h2>Services Engagement</h2>
-            <div class="vertical-sliders">
-                <div class="slider-container">
-                    <input type="range" id="projectManagementSlider" name="projectManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('projectManagement', this.value); calculateTotal()" **class="vertical-slider"**>
-                    <label for="projectManagementSlider">Project Management: <span id="projectManagementValue">1.00x</span></label>
+            <section id="services">
+                <div class="vertical-sliders">
+                    <div class="slider-container">
+                        <input type="range" id="projectManagementSlider" name="projectManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('projectManagement', this.value); calculateTotal()" class="vertical-slider">
+                        <label for="projectManagementSlider">Project Management: <span id="projectManagementValue">1.00x</span></label>
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" id="changeManagementSlider" name="changeManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('changeManagement', this.value); calculateTotal()" class="vertical-slider">
+                        <label for="changeManagementSlider">Change Management: <span id="changeManagementValue">1.00x</span></label>
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" id="cadServicesSlider" name="cadServicesSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('cadServices', this.value); calculateTotal()" class="vertical-slider">
+                        <label for="cadServicesSlider">CAD Services: <span id="cadServicesValue">1.00x</span></label>
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" id="dataCleanupSlider" name="dataCleanupSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('dataCleanup', this.value); calculateTotal()" class="vertical-slider">
+                        <label for="dataCleanupSlider">Data Cleanup: <span id="dataCleanupValue">1.00x</span></label>
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" id="integrationEffortsSlider" name="integrationEffortsSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('integrationEfforts', this.value); calculateTotal()" class="vertical-slider">
+                        <label for="integrationEffortsSlider">Integration Efforts: <span id="integrationEffortsValue">1.00x</span></label>
+                    </div>
                 </div>
-                <div class="slider-container">
-                    <input type="range" id="changeManagementSlider" name="changeManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('changeManagement', this.value); calculateTotal()" **class="vertical-slider"**>
-                    <label for="changeManagementSlider">Change Management: <span id="changeManagementValue">1.00x</span></label>
+                <div>
+                    Total Multiplier: <span id="totalMultiplier">1.00x</span>
                 </div>
-                <div class="slider-container">
-                    <input type="range" id="cadServicesSlider" name="cadServicesSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('cadServices', this.value); calculateTotal()" **class="vertical-slider"**>
-                    <label for="cadServicesSlider">CAD Services: <span id="cadServicesValue">1.00x</span></label>
-                </div>
-                <div class="slider-container">
-                    <input type="range" id="dataCleanupSlider" name="dataCleanupSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('dataCleanup', this.value); calculateTotal()" **class="vertical-slider"**>
-                    <label for="dataCleanupSlider">Data Cleanup: <span id="dataCleanupValue">1.00x</span></label>
-                </div>
-                <div class="slider-container">
-                    <input type="range" id="integrationEffortsSlider" name="integrationEffortsSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('integrationEfforts', this.value); calculateTotal()" **class="vertical-slider"**>
-                    <label for="integrationEffortsSlider">Integration Efforts: <span id="integrationEffortsValue">1.00x</span></label>
-                </div>
-            </div>
-            <div>
-                Total Multiplier: <span id="totalMultiplier">1.00x</span>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section id="solution">
+        <div id="Software" class="tabcontent">
             <h2>Software Used</h2>
-            <label for="software">Select Software:</label>
-            <select id="software" name="software" onchange="calculateTotal()">
-                <option value="150000">ServiceNow</option>
-                <option value="100000">Archibus</option>
-                <option value="200000">IBM TRIRIGA</option>
-            </select>
-        </section>
+            <section id="solution">
+                <label for="software">Select Software:</label>
+                <select id="software" name="software" onchange="calculateTotal()">
+                    <option value="150000">ServiceNow</option>
+                    <option value="100000">Archibus</option>
+                    <option value="200000">IBM TRIRIGA</option>
+                </select>
+            </section>
+        </div>
 
-                <section id="total">
+        <section id="total">
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <div style="text-align: left;">
                     <div>Implementation Cost: <span id="implementationCostDisplay">$0</span></div>
@@ -280,5 +293,23 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
