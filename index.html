@@ -229,25 +229,27 @@
 
         <section id="services">
             <h2>Services Engagement</h2>
-            <div>
-                <label for="projectManagementSlider">Project Management: <span id="projectManagementValue">1.00x</span></label>
-                <input type="range" id="projectManagementSlider" name="projectManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('projectManagement', this.value); calculateTotal()">
-            </div>
-            <div>
-                <label for="changeManagementSlider">Change Management: <span id="changeManagementValue">1.00x</span></label>
-                <input type="range" id="changeManagementSlider" name="changeManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('changeManagement', this.value); calculateTotal()">
-            </div>
-            <div>
-                <label for="cadServicesSlider">CAD Services: <span id="cadServicesValue">1.00x</span></label>
-                <input type="range" id="cadServicesSlider" name="cadServicesSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('cadServices', this.value); calculateTotal()">
-            </div>
-            <div>
-                <label for="dataCleanupSlider">Data Cleanup: <span id="dataCleanupValue">1.00x</span></label>
-                <input type="range" id="dataCleanupSlider" name="dataCleanupSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('dataCleanup', this.value); calculateTotal()">
-            </div>
-            <div>
-                <label for="integrationEffortsSlider">Integration Efforts: <span id="integrationEffortsValue">1.00x</span></label>
-                <input type="range" id="integrationEffortsSlider" name="integrationEffortsSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('integrationEfforts', this.value); calculateTotal()">
+            <div class="vertical-sliders">
+                <div class="slider-container">
+                    <input type="range" id="projectManagementSlider" name="projectManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('projectManagement', this.value); calculateTotal()" class="vertical-slider">
+                    <label for="projectManagementSlider">Project Management: <span id="projectManagementValue">1.00x</span></label>
+                </div>
+                <div class="slider-container">
+                    <input type="range" id="changeManagementSlider" name="changeManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('changeManagement', this.value); calculateTotal()" class="vertical-slider">
+                    <label for="changeManagementSlider">Change Management: <span id="changeManagementValue">1.00x</span></label>
+                </div>
+                <div class="slider-container">
+                    <input type="range" id="cadServicesSlider" name="cadServicesSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('cadServices', this.value); calculateTotal()" class="vertical-slider">
+                    <label for="cadServicesSlider">CAD Services: <span id="cadServicesValue">1.00x</span></label>
+                </div>
+                <div class="slider-container">
+                    <input type="range" id="dataCleanupSlider" name="dataCleanupSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('dataCleanup', this.value); calculateTotal()" class="vertical-slider">
+                    <label for="dataCleanupSlider">Data Cleanup: <span id="dataCleanupValue">1.00x</span></label>
+                </div>
+                <div class="slider-container">
+                    <input type="range" id="integrationEffortsSlider" name="integrationEffortsSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('integrationEfforts', this.value); calculateTotal()" class="vertical-slider">
+                    <label for="integrationEffortsSlider">Integration Efforts: <span id="integrationEffortsValue">1.00x</span></label>
+                </div>
             </div>
             <div>
                 Total Multiplier: <span id="totalMultiplier">1.00x</span>
