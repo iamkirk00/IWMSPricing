@@ -39,18 +39,18 @@ function calculateTotal() {
 
     // Total Multiplier
     let totalMultiplier = 1 + (projectManagementMultiplier - 1) + (changeManagementMultiplier - 1) + (cadServicesMultiplier - 1) + (dataCleanupMultiplier - 1) + (integrationEffortsMultiplier - 1);
-    console.log("totalMultiplier", totalMultiplier); // Add this line
 
     // Software Cost
     let softwareCost = parseInt(document.getElementById("software").value);
-    console.log("Software Cost (before parseInt):", document.getElementById("software").value);
-    console.log("Software Cost (after parseInt):", softwareCost);
 
+    // Calculate Costs
+    let finalImplementationCost = implementationCost * totalMultiplier;
     // Calculate Total Cost
-    let totalCost = implementationCost * totalMultiplier + softwareCost;
-    console.log("totalCost", totalCost); // Add this line
+    let totalCost = finalImplementationCost + softwareCost;
 
-    // Update the Total Cost Display
+    // Update the display
+    document.getElementById("implementationCostDisplay").innerText = "$" + finalImplementationCost.toLocaleString();
+    document.getElementById("softwareCostDisplay").innerText = "$" + softwareCost.toLocaleString();
     document.getElementById("totalCost").innerText = "$" + totalCost.toLocaleString();
     document.getElementById("totalMultiplier").innerText = totalMultiplier.toFixed(2) + "x";
 }
