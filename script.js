@@ -43,7 +43,8 @@ function calculateTotal() {
 
     // Software Cost
     let softwareCost = parseInt(document.getElementById("software").value);
-    console.log("softwareCost", softwareCost); // Add this line
+    console.log("Software Cost (before parseInt):", document.getElementById("software").value);
+    console.log("Software Cost (after parseInt):", softwareCost);
 
     // Calculate Total Cost
     let totalCost = implementationCost * totalMultiplier + softwareCost;
