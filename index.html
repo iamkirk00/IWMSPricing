@@ -86,7 +86,7 @@
                             <option value="0">Not Implemented</option>
                             <option value="25000">Initialized</option>
                             <option value="50000">Configured</option>
-                            <option value="100000">Heavily Configured</option>
+                                                    <option value="100000">Heavily Configured</option>
                         </select>
                     </div>
                     <div>
@@ -160,4 +160,115 @@
                         <label for="spacePlanning">Space Planning:</label>
                         <select id="spacePlanning" name="spacePlanning" onchange="calculateTotal()">
                             <option value="0">Not Implemented</option>
-                            <option value="25000">Initialized</
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3>Maintenance</h3>
+                    <div>
+                        <label for="serviceRequests">Service Requests:</label>
+                        <select id="serviceRequests" name="serviceRequests" onchange="calculateTotal()">
+                            <option value="0">Not Implemented</option>
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="preventiveMaintenance">Preventive Maintenance:</label>
+                        <select id="preventiveMaintenance" name="preventiveMaintenance" onchange="calculateTotal()">
+                            <option value="0">Not Implemented</option>
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="inventoryManagement">Inventory Management:</label>
+                        <select id="inventoryManagement" name="inventoryManagement" onchange="calculateTotal()">
+                            <option value="0">Not Implemented</option>
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="vendorEngagementMaintenance">Vendor Engagement:</label>
+                        <select id="vendorEngagementMaintenance" name="vendorEngagementMaintenance" onchange="calculateTotal()">
+                            <option value="0">Not Implemented</option>
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="workOrderCompletion">Work Order Completion:</label>
+                        <select id="workOrderCompletion" name="workOrderCompletion" onchange="calculateTotal()">
+                            <option value="0">Not Implemented</option>
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="projectManagementMaintenance">Project Management:</label>
+                        <select id="projectManagementMaintenance" name="projectManagementMaintenance" onchange="calculateTotal()">
+                            <option value="0">Not Implemented</option>
+                            <option value="25000">Initialized</option>
+                            <option value="50000">Configured</option>
+                            <option value="100000">Heavily Configured</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services Engagement</h2>
+            <div>
+                <label for="projectManagementSlider">Project Management: <span id="projectManagementValue">1.00x</span></label>
+                <input type="range" id="projectManagementSlider" name="projectManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('projectManagement', this.value); calculateTotal()">
+            </div>
+            <div>
+                <label for="changeManagementSlider">Change Management: <span id="changeManagementValue">1.00x</span></label>
+                <input type="range" id="changeManagementSlider" name="changeManagementSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('changeManagement', this.value); calculateTotal()">
+            </div>
+            <div>
+                <label for="cadServicesSlider">CAD Services: <span id="cadServicesValue">1.00x</span></label>
+                <input type="range" id="cadServicesSlider" name="cadServicesSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('cadServices', this.value); calculateTotal()">
+            </div>
+            <div>
+                <label for="dataCleanupSlider">Data Cleanup: <span id="dataCleanupValue">1.00x</span></label>
+                <input type="range" id="dataCleanupSlider" name="dataCleanupSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('dataCleanup', this.value); calculateTotal()">
+            </div>
+            <div>
+                <label for="integrationEffortsSlider">Integration Efforts: <span id="integrationEffortsValue">1.00x</span></label>
+                <input type="range" id="integrationEffortsSlider" name="integrationEffortsSlider" min="1.00" max="3.00" step="0.01" value="1.00" oninput="updateSliderValue('integrationEfforts', this.value); calculateTotal()">
+            </div>
+            <div>
+                Total Multiplier: <span id="totalMultiplier">1.00x</span>
+            </div>
+        </section>
+
+        <section id="software">
+            <h2>Software Used</h2>
+            <label for="software">Select Software:</label>
+            <select id="software" name="software" onchange="calculateTotal()">
+                <option value="150000">ServiceNow</option>
+                <option value="100000">Archibus</option>
+                <option value="200000">IBM TRIRIGA</option>
+            </select>
+        </section>
+
+        <section id="total">
+            <h2>Total Estimated Cost: <span id="totalCost">$0</span></h2>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
